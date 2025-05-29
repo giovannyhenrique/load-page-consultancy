@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoria de Gestão ISO</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Banner Principal */
+    .banner {
+      background: url('banner.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .banner p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .banner a {
+      display: inline-block;
+      background-color: #ff6600;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Seções */
+    section {
+      padding: 60px 0;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #004080;
+    }
+
+    .benefits, .services, .team, .clients {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .benefit, .service, .team-member, .client {
+      flex: 1 1 200px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .benefit img, .service img, .team-member img, .client img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .logo, nav {
+        float: none;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .benefits, .services, .team, .clients {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Sua Empresa</div>
+      <nav>
+        <ul>
+          <li><a href="#benefits">Benefícios</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#clients">Clientes</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div style="clear: both;"></div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1>Consultoria de Gestão ISO</h1>
+      <p>Transformando desafios em oportunidades de crescimento.</p>
+      <a href="#contact">Agende uma reunião</a>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <h2>Principais Benefícios</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <img src="benefit1.jpg" alt="Benefício 1">
+          <h3>Caminho Claro para a Certificação ISO</h3>
+          <p>Oferecemos um plano estruturado para alcançar a certificação ISO de forma eficaz.</p>
+        </div>
+        <div class="benefit">
+          <img src="benefit2.jpg" alt="Benefício 2">
+          <h3>Transformação de Desafios em Vantagens</h3>
+          <p>Convertendo obstáculos em oportunidades competitivas para sua empresa.</p>
+        </div>
+        <div class="benefit">
+          <img src="benefit3.jpg" alt="Benefício 3">
+          <h3>Oportunidades de Crescimento</h3>
+          <p>Impulsionamos o crescimento sustentável através de melhorias contínuas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Serviços de Consultoria ISO</h2>
+      <div class="services">
+        <div class="service">
+          <img src="iso9001.jpg" alt="ISO 9001">
+          <h3>ISO 9001</h3>
+          <p>Sistema de Gestão da Qualidade focado na melhoria contínua e satisfação do cliente.</p>
+        </div>
+        <div class="service">
+          <img src="iso14001.jpg" alt="ISO 14001">
+          <h3>ISO 14001</h3>
+          <p>Gestão Ambiental para minimizar impactos e promover sustentabilidade.</p>
+        </div>
+        <div class="service">
+          <img src="iso27001.jpg" alt="ISO 27001">
+          <h3>ISO 27001</h3>
+          <p>Segurança da Informação para proteger dados sensíveis e garantir conformidade.</p>
+        </div>
+        <!-- Adicione mais serviços conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <h2>Conheça Nossa Equipe</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="rodrigo.jpg" alt="Rodrigo Riquelme">
+          <h3>Rodrigo Riquelme</h3>
+          <p>Especialista em Sistemas de Gestão ISO com ampla experiência no setor.</p>
+        </div>
+        <div class="team-member">
+          <img src="ubiratan.jpg" alt="Ubiratan Drimel">
+          <h3>Ubiratan Drimel</h3>
+          <p>Consultor sênior focado em melhoria de processos e eficiência operacional.</p>
+        </div>
+        <!-- Adicione mais membros conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="container">
+      <h2>Alguns de Nossos Clientes</h2>
+      <div class="clients">
+        <div class="client">
+          <img src="cliente1.jpg" alt="Cliente 1">
+        </div>
+        <div class="client">
+          <img src="cliente2.jpg" alt="Cliente 2">
+        </div>
+        <!-- Adicione mais logos de clientes conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p>Entre em contato para soluções estratégicas e eficazes em seus negócios.</p>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
